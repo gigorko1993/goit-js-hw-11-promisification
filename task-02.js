@@ -10,7 +10,7 @@ const toggleUserState = (allUsers, userName) => {
     resolve(
       allUsers.map(user =>
         user.name === userName ? { ...user, active: !user.active } : user,
-      ),
+      )
     );
   });
 };
